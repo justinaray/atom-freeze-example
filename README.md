@@ -1,7 +1,22 @@
 # Atom-freeze-example
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This Repo exists to demonstrate a freeze example in the atom text editor.
+
+To Freeze atom:
+* Open app/components/example-one/template.hbs
+* Open app/components/example-two/template.hbs
+* Open app/example-one/template.hbs
+
+Atom will freeze while trying to open the file.  Originally, I thought this was
+due to handlebars/mustache, but the issue persists even after that package is disabled.
+
+This is obviously related to the sub-folders and files being named similarly but in separate directory hierarchies.
+
+Unfortunately, the freeze makes it impossible to grab a CPU profile.
+
+Thanks to @lee-dohm for all his help on the slack channel.
+
+
 
 ## Prerequisites
 
@@ -50,4 +65,3 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
